@@ -22,9 +22,9 @@ class AgrawalKayalSaxena {
   }
 
   static boolean AKSPrimalityTest(BigInteger num){
-    if (num.compareTo(Utility.bigInt(1) == 0 || num.compareTo(Utility.bigInt(1)) == -1))
+    if (num.compareTo(Utility.bigInt(1)) == 0 || num.compareTo(Utility.bigInt(1)) == -1)
       return false;
-    if (num.compareTo(Utility.bigInt(3) == 0 || num.compareTo(Utility.bigInt(3) == -1)))
+    if (num.compareTo(Utility.bigInt(3)) == 0 || num.compareTo(Utility.bigInt(3)) == -1)
       return true;
     if (num.mod(Utility.bigInt(2)).equals(BigInteger.ZERO) || num.mod(Utility.bigInt(3)).equals(BigInteger.ZERO))
       return false;
